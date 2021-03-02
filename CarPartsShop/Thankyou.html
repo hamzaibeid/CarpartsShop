@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>ty!</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+	h1 {
+		
+  position: fixed;
+  bottom: 350px;
+  right: 550px;
+  width: 420px;
+  border: 5px solid #73AD21;
+}
+	}
+</style>
+<script src="">obj.listCart = function () { // -> array of Items
+        var cartCopy = [];
+        console.log("Listing cart");
+        console.log(cart);
+        for (var i in cart) {
+            console.log(i);
+            var item = cart[i];
+            var itemCopy = {};
+            for (var p in item) {
+                itemCopy[p] = item[p];
+            }
+            itemCopy.total = (item.price * item.count).toFixed(2);
+            cartCopy.push(itemCopy);
+        }
+        return cartCopy;
+    };</script>
+
+<body>
+
+<h1> Thank you For your purchase! </h1>
+<button type="button" ><a href = "index.html" style="color: #000000; text-decoration: none;"> Get Back to Home page</button></body>
+
+</body>
+</html>

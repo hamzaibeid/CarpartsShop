@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<script type="text/javascript">
+
+function SelectRedirect(){
+// ON selection of section this function will work
+//alert( document.getElementById('s1').value);
+
+switch(document.getElementById('drop1').value)
+{
+case "Toyota":
+window.location= " C:/Users/hamza/Desktop/university/HTML/Web1%20project/Toyota.html";
+break;
+
+case "Ford":
+window.location= " C:/Users/hamza/Desktop/university/HTML/Web1%20project/Ford.html";
+break;
+
+case "Mitsubishi":
+window.location= " C:/Users/hamza/Desktop/university/HTML/Web1%20project/Mitsubishi.html";
+break;
+
+case "Kia":
+window.location= " C:/Users/hamza/Desktop/university/HTML/Web1%20project/Kia.html";
+break;
+
+case "Hyundai":
+window.location= " C:/Users/hamza/Desktop/university/HTML/Web1%20project/Hyundai.html";
+break;
+
+case "GMC":
+window.location= " C:/Users/hamza/Desktop/university/HTML/Web1%20project/GMC.html";
+break;
+}
+}
+
+
+
+
+</script>
+
+<style type="text/css">
+
+   
+
+	.p1 {text-align: center; font-family: "Times New Roman", Times, serif;font-size: 100px; border-style: dashed;  border-color: red;}
+	.foregroundimg{position: left;
+top: 230px;
+left: 620px;
+z-index 1;
+width: 20%;
+height: auto;}
+.car1po{
+	display:inline-block;
+    margin-left: 200px;
+    margin-top:  300px; 
+    position: relative;
+    }
+    .carpo2{
+   position: left;
+  bottom: 193;
+  right: 805;
+  
+ 
+    }
+  
+    
+</style>
+</head>
+
+<body>
+	<p class="p1">Auto Parts shop</p>
+
+	<img class = "foregroundimg" src = "logo1.jpeg" width="200" height="200">
+
+	
+    <select class= "car1po" name = "Car1" id = "drop1" onChange="SelectRedirect();">
+    <option disabled selected>select:</option>
+    <option  value = "Toyota" > Toyota </option>
+    <option  value = "Ford" > Ford </option>
+    <option  value = "Mitsubishi" > Mitsubishi </option>
+    <option  value = "Kia" > Kia </option>
+    <option  value = "Hyundai" > Hyundai </option>
+    <option  value = "GMC" > GMC </option>
+   </select>
+    <p class = "carpo2">Choose Car: </p>
+
+
+</select></label>
+</body>
+</html>
